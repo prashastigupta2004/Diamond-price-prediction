@@ -1,3 +1,4 @@
+
 # Diamond Price Prediction
 
 A machine learning project to predict the price of diamonds based on various attributes using regression models.
@@ -13,7 +14,7 @@ This project aims to predict diamond prices based on attributes such as carat, c
 3. [Usage](#usage)
 4. [Model Information](#model-information)
 5. [Results](#results)
-   
+
 ## Project Structure
 
 - **data/**: Contains raw and processed data files.
@@ -58,19 +59,47 @@ Ensure you have the following installed:
 Prepare the data for training:
 ```bash
 python src/data_preprocessing.py
+```
+
+### Training the Model
 
 Train the machine learning model:
+```bash
 python src/train_model.py
+```
+
+### Making Predictions
 
 Predict the price of diamonds:
+```bash
 python src/predict.py
+```
 
-Running the Web Application
+### Running the Web Application
+
+Start the web application:
+```bash
 python application.py
+```
 
-**## Results**
+## Model Information
+
+The features considered for prediction include:
+- **Carat**
+- **Cut** (Fair, Good, Very Good, Premium, Ideal)
+- **Color** (D, E, F, G, H, I, J)
+- **Clarity** (IF, VVS1, VVS2, VS1, VS2, SI1, SI2, I1)
+- **Depth**
+- **Table**
+- **X** (length in mm)
+- **Y** (width in mm)
+- **Z** (depth in mm)
+
+## Results
+
 The model's performance on the test set:
+- **R-squared**: 93.68%
+- **MAE**: $674.0
+- **RMSE**: $1013.90
+```
 
-R-squared: 93.68 %
-MAE: 674.0
-RMSE: 1013.90
