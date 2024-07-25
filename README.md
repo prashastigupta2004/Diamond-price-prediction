@@ -68,7 +68,7 @@ python src/predict.py
 Running the Web Application
 python application.py
 
-## Results
+**## Results**
 The model's performance on the test set:
 
 R-squared: 93.68 %
