@@ -3,4 +3,5 @@ numpy
 flask
 seaborn
 scikit-learn
+gunicorn==20.1.0
 #-e .
